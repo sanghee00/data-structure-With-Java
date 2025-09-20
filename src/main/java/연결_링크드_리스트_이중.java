@@ -1,14 +1,14 @@
 import java.lang.reflect.Array;
 import java.util.*;
 
-public class 이중_연결_링크드_리스트<E>{
+public class 연결_링크드_리스트_이중<E>{
 
     private Node<E> head;
     private Node<E> tail;
 
     private int size;
 
-    public 이중_연결_링크드_리스트() {
+    public 연결_링크드_리스트_이중() {
         this.head = null;
         this.tail = null;
         this.size = 0;

@@ -1,11 +1,11 @@
 import java.util.Objects;
 
-public class 원형_큐 {
+public class 원형_큐_배열 {
     private final Object[] queue;
     private int front = 0;
     private int rear = 0;
 
-    public 원형_큐(int size) {
+    public 원형_큐_배열(int size) {
         this.queue = new Object[size];
     }
 
