@@ -1,30 +1,20 @@
 public class Main {
     public static void main(String[] args) {
+        AVL_트리 avlTree = new AVL_트리();
+        avlTree.add(5);
+        avlTree.add(2);
+        avlTree.add(9);
+        avlTree.add(3);
+        avlTree.add(7);
+        avlTree.add(4);
+        avlTree.add(8);
+        avlTree.add(1);
+        avlTree.add(6);
+        avlTree.printTree();
+        System.out.println("traversal");
+        avlTree.traversal();
 
-        원형_큐_리스트 circleQueue = new 원형_큐_리스트();
-
-        circleQueue.add(1);
-        circleQueue.add(2);
-        circleQueue.add(3);
-        circleQueue.add(4);
-        circleQueue.add(5);
-        circleQueue.add(6);
-        circleQueue.add(7);
-        circleQueue.add(8);
-        circleQueue.add(9);
-        circleQueue.add(10);
-
-        System.out.println("맨위 : " + circleQueue.peek());
-        System.out.println(circleQueue.poll());
-        System.out.println(circleQueue.poll());
-        System.out.println(circleQueue.poll());
-        System.out.println(circleQueue.poll());
-        System.out.println(circleQueue.poll());
-        System.out.println(circleQueue.poll());
-        System.out.println(circleQueue.poll());
-        System.out.println(circleQueue.poll());
-        System.out.println(circleQueue.poll());
-        System.out.println(circleQueue.poll());
-
+        avlTree.remove(9);
+        avlTree.printTree();
     }
 }

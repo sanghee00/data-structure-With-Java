@@ -50,6 +50,10 @@ public class 이진_탐색_트리 {
         return getSmallestNode(x.left);
     }
 
+    public void remove(int key) {
+        root = removeNode(root, key);
+    }
+
     private Node removeNode(Node x, int key) {
         if (null == x) {
             throw new RuntimeException("노드가 존재하지 않음");
@@ -80,10 +84,10 @@ public class 이진_탐색_트리 {
     }
 
     public int search(int key) {
-        return serachNode(root, key).key;
+        return searchNode(root, key).key;
     }
 
-    private Node serachNode(
+    private Node searchNode(
         Node x,
         int key
     ) {
@@ -91,9 +95,9 @@ public class 이진_탐색_트리 {
         if (null == node) {
             throw new RuntimeException("노드가 없음");
         } else if (node.key > key) {
-            node = serachNode(node.left, key);
+            node = searchNode(node.left, key);
         } else if (node.key < key) {
-            node = serachNode(node.right, key);
+            node = searchNode(node.right, key);
         }
 
         return node;
