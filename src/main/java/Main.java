@@ -1,20 +1,20 @@
 public class Main {
-    public static void main(String[] args) {
-        AVL_트리 avlTree = new AVL_트리();
-        avlTree.add(5);
-        avlTree.add(2);
-        avlTree.add(9);
-        avlTree.add(3);
-        avlTree.add(7);
-        avlTree.add(4);
-        avlTree.add(8);
-        avlTree.add(1);
-        avlTree.add(6);
-        avlTree.printTree();
-        System.out.println("traversal");
-        avlTree.traversal();
 
-        avlTree.remove(9);
-        avlTree.printTree();
+    public static void main(String[] args) {
+        RedBlackTree redBlackTree = new RedBlackTree();
+        redBlackTree.add(5);
+        redBlackTree.add(2);
+        redBlackTree.add(9);
+        redBlackTree.add(3);
+        redBlackTree.add(7);
+        redBlackTree.add(4);
+        redBlackTree.add(8);
+        redBlackTree.add(1);
+        redBlackTree.add(6);
+        redBlackTree.printTree();
+        System.out.println("traversal");
+        redBlackTree.traversal();
+
+        System.out.println(redBlackTree.search(1));
     }
 }
